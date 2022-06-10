@@ -21,7 +21,14 @@ p {
     margin: 0 0 10px;
 }
 
+body{
+    background-color: #fff;
+    overflow-x: hidden;
+    z-index: 5;
+}
+
 /* /Default */
+
 
 
 
@@ -31,10 +38,176 @@ p {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 /* /Container */
+
+
+/* Dark Mode */
+
+
+.dark .Main__energy__functionBlock__logo{
+    background-image: url(Img/CarEnergy/batman.svg);
+}
+
+.dark .Logo__text{
+    color: #68B738;
+}
+
+.dark .energy{
+    color: #fff;
+}
+
+.dark .Main__energy__functionBlock__box__text{
+    color: #D9FFBB;
+}
+
+.dark .li {
+    color: #fff;
+}
+
+
+.dark body{
+    background-color: #292D29;
+}
+
+
+
+.dark .Main__energy__functionBlock__box{
+    color: #fff;
+}
+
+
+.dark .infoEnergy__box{
+  background-color: #D9FFBB;
+}
+
+
+
+.dark .infoEnergy__box__text{
+   color: #000;
+}
+
+
+
+.dark .aboutEnergy__title{
+    color: #fff;
+}
+
+
+.dark .aboutEnergy__row__item__text{
+    color: #fff;
+}
+
+
+.dark .exempleEnergy{
+  background-color: #393B38;
+}
+
+
+.dark .exempleEnergy__info__block__text{
+   color: #fff;
+}
+
+
+.dark .exempleEnergy__title{
+  color: #fff;
+}
+
+.dark .weightInfo{
+   color: #fff;
+}
+
+
+.dark .weightInfo__text{
+   background-color: #444;
+   color: #fff;
+}
+
+
+.dark .weightInfo__textSecond{
+    background-color: #444;
+    color: #fff;
+}
+
+
+.dark .exempleEnergy__info__block__row{
+    color: #fff;
+}
+.dark .exempleEnergy__catBlock__switcher{
+    color: #fff;
+}
+
+
+.dark .switcher_loader__controler{
+    border: 1px solid #CDCDCD;
+    background-color: #312828 ;
+}
+
+
+.dark .energyFooter{
+     background-color: #68B738;
+}
+
+
+.dark .burger__item{
+    background-color: #fff; 
+}
+
+.dark .burger__item:before{
+    background-color: #fff;
+}
+
+.dark .burger__item:after{
+    background-color: #fff;
+}
+
+
+
+
+/* /Dark Mode */
+
+
+/* Burger Menu */
+
+.Burger__block{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(104, 183, 56, 0.9);
+    left: -100%; 
+    z-index: 1000;
+}
+.Burger__block__inner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body .Burger__block{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.liBurger{
+    float: none;
+    list-style: none;
+    margin: 60px 0;
+    font-size: 48px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif; 
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+/* /Burger Menu */
 
 
 
@@ -91,7 +264,7 @@ p {
     color: #444;
 }
 
-li{
+.li{
     list-style: none;
     float: left;
     text-transform: uppercase;
@@ -99,6 +272,7 @@ li{
     color: #fff;
     font-size: 20px;
     margin-left: 32px;
+    cursor: pointer;
 }
 
 
@@ -127,7 +301,7 @@ li:hover{
 
 
 .Main__energy__functionBlock__box {
-    margin-left: 80px;
+    margin-left: 65px;
     margin-top: 120px;
 }
 
@@ -233,6 +407,7 @@ li:hover{
    .Main__energy__navBlock__img{
        left: 45%;
    }
+
 }
 
 
@@ -256,7 +431,7 @@ li:hover{
         align-items: center;
     }
 
-            ul{
+            .ulHeader{
                 display: none;
             }
             
@@ -267,6 +442,10 @@ li:hover{
 
          .Main__energy__navBlock__img{
             display: none;
+        }
+
+        .Main__energy__functionBlock__box {
+            margin-left: 40px;
         }
 }
 
@@ -375,6 +554,8 @@ li:hover{
     border-style: solid;
     border-color: transparent #000;
 }
+
+
 
 .infoEnergy__box__catalog:hover .infoEnergy__box__catalog__block{
     width: 40px;
@@ -497,6 +678,7 @@ li:hover{
 
 
 
+
 @media screen and (max-width:1300px) {
 
     .aboutEnergy{
@@ -565,6 +747,7 @@ li:hover{
     height: 656px;
     width: 100%;
     display: flex;
+    background: #f2f2f2;
 
 }
 
@@ -622,12 +805,12 @@ li:hover{
 }
 
 .weightInfo__text{
-    width: 111px;
+    width: 109px;
     background-color: #F2F2F2;
     color: #444;
     font-family: Arial, sans-serif;
     position: relative;
-    left: 25px;
+    left: 27px;
     top: -11px;
 }
 
@@ -637,12 +820,12 @@ li:hover{
 
 
 .weightInfo__textSecond{
-    width: 150px;
+    width: 115px;
     background-color: #F2F2F2;
     color: #444;
     font-family: Arial, sans-serif;
     position: relative;
-    left: 7px;
+    left: 24px;
     top: -11px;
 }
 
@@ -677,18 +860,24 @@ li:hover{
     width: 50%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-
+    flex-direction: column;
 }
 
 
+.catImgBlock{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .exempleEnergy__catBlock__img {
-    width: 590px;
-    height: 556px;
+    width: 400px;
+    height: 400px;
     background-image: url(Img/exempleEnergy/mixCat.png);
     background-size: cover;
-    margin-left: 60px;
 }
 
 .exempleEnergy__inner{
@@ -757,7 +946,6 @@ li:hover{
     }
 
 
-
     .exempleEnergy__inner{
         flex-direction: column;
     }
@@ -810,7 +998,7 @@ li:hover{
 @media screen and (max-width:940px){
 
     .exempleEnergy{
-        height: 180vh;
+        height: 160vh;
     }
 
     .exempleEnergy__info{
@@ -850,12 +1038,20 @@ li:hover{
 }
 
 
-@media screen and (max-width:540px){
+@media screen and (max-width:564px){
     .exempleEnergy{
-        height: 200vh;
+        height: 160vh;
     }
     .switcher_loader{
         width: 260px;
+    }
+
+    .exempleEnergy__info{
+        padding: 0 0;
+    }
+
+    .exempleEnergy__info__block__row__price{
+        margin-left: 10px;
     }
 }
 
@@ -900,7 +1096,6 @@ li:hover{
 .icon:first-child{
     margin-left: 0;
 }
-
 
 
 
@@ -954,4 +1149,267 @@ li:hover{
 
 /* /Energy Footer */
 
+
+
+
+/* Register Menu */
+
+
+.registerMenu{
+    width: 400px;
+    height: 550px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:15px 10px;
+}
+
+.pageReg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.registerMenu__title {
+    font-size: 32px;
+    color: #000;
+}
+
+
+
+.registerMenu__text {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.regText {
+    color: #555;
+}
+
+.regHr {
+    margin-top: 10px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(207, 207, 207);
+    border: none;
+}
+
+
+.registerMenu__inpRow {
+    display: flex;
+}
+
+
+.registerMenu__birth {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+.registerMenu__gender {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}     
+
+
+.registerMenu__inpRow{
+  margin-top: 10px;
+}
+
+input:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+input{
+   border: 1px solid rgb(207, 207, 207);
+   color: #000;
+   padding:5px 10px;
+   border-radius: 6px;
+   height: 40px;
+}
+
+.inpName{
+   width: 180px;
+
+}
+.inpName:first-child{
+   margin-right: 20px;
+}
+
+.deafaultInfo{
+ width: 380px;
+}
+
+
+.select:active, :hover, :focus{
+   outline: 0;
+   outline-offset: 0;
+}
+
+
+select{
+   border: 1px solid rgb(207, 207, 207);
+   color: #000;
+   border-radius: 6px;
+   height: 40px;
+   width: 115px;
+   padding:5px 10px;
+   cursor: pointer;
+}
+
+
+.rowSelect{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.gendeBlock {
+   width: 180px;
+   border: 1px solid rgb(207, 207, 207);
+   color: #000;
+   border-radius: 6px;
+   height: 40px;
+   padding:5px 10px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+
+.gendeBlock:first-child{
+   margin-right: 10px;
+}
+
+
+.gendeBlock__item {
+   height: 15px;
+   width: 15px;
+   border-radius: 50%;
+   border: 1px solid rgb(207, 207, 207);
+   position: relative;
+   left: 90px;
+}
+
+
+.gendeBlock__itemSecond{
+   height: 15px;
+   width: 15px;
+   border-radius: 50%;
+   border: 1px solid rgb(207, 207, 207);
+   position: relative;
+   left: 75px;
+}
+
+
+.registerMenu__btn{
+   width: 300px;
+   height: 50px;
+   font-size: 28px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+   border: none;
+   background-color: #68b738;
+   border-radius: 8px;
+   color: #fff;
+   cursor: pointer;
+}
+
+
+.registerMenu__logIn{
+   margin-top: 20px;
+   color: rgb(45, 142, 194);
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+
+
+
+
+
+.loginMenu {
+ width: 400px;
+ height:400px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ background-color: #fff;
+ border-radius: 10px;
+ box-shadow:  0 0 10px #000;
+ padding: 10px 10px;
+}
+
+.loginMenu__title {
+   margin-top: 10px;
+   font-size: 28px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+
+.LoginDefault {
+   width: 380px;
+   height: 60px;
+   font-size: 24px;
+}
+
+
+.LoginBtn {
+   background-color: #68b738;
+   width: 300px;
+   height: 50px;
+   font-size: 28px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+   border: none;
+   border-radius: 8px;
+   color: #fff;
+   cursor: pointer;
+}   
+
+.logHr{
+   height: 1px;
+   width: 100%;
+   background-color: rgb(182, 179, 179);
+   margin-top: 20px;
+   border: none;
+}
+
+
+.btnReg{
+   margin-top: 20px;
+}
+
+.pageReg{
+    display:none;
+    background-color: rgba(22, 55, 2, 0.2);
+    backdrop-filter: blur(20px);
+    z-index: 10000000000000000000;
+}
+
+.loginMenu{
+    display: none;
+    box-shadow:  0 0 10px #fff;
+}
+
+
+.registerMenu{
+    display: none;
+    box-shadow:  0 0 10px #fff;
+}
 

@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Css/style.css">
-    <link rel="icon" href="Css/Img/CarEnergy/energyLogo.svg">
+    <link rel="icon" href="Css/Img/CarEnergy/batman.svg">
     <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="js/wow.min.js"></script>
     <script>   new WOW().init();  </script>
@@ -19,27 +19,192 @@
 <body>
     
 
-<!-- Main Energy -->
+<!-- Register Menu -->
 
-<div class="Main__energy">
+
+<div class="pageReg" id="accountMenu">
+
+
+    <div class="loginMenu animate__animated animate__fadeIn" id="menuLogo">
+        <div class="loginMenu__title">Вхід на CatEnergy</div>
+        <div class="registerMenu__inpRow">
+            <input class="LoginDefault" placeholder="Номер телeфону або Email" type="text" name="" id="">
+         </div>
+         <div class="registerMenu__inpRow">
+            <input placeholder="Новий пароль" class="LoginDefault" type="password" name="" id="">
+         </div>
+         <button class="LoginBtn" id="mainLogin">Вхід</button>
+
+         <button class="registerMenu__btn btnReg" id="btnReg">Реєстрація</button>
+
+    </div>
+
+
+
+ <div class="registerMenu animate__animated animate__fadeIn" id="regMenu">
+     <div class="registerMenu__title">Створити акаунт</div>
+     <div class="registerMenu__text regText">Швидко і легко</div>
+     <hr class="regHr">
+     <div class="registerMenu__inpRow">
+        <input class="inpName" placeholder="Імя" type="text" name="" id="userLogin">
+        <input class="inpName" placeholder="Фамілія" type="text" name="" id="">
+     </div>
+     <div class="registerMenu__inpRow">
+        <input class="deafaultInfo" placeholder="Номер телeфону або Email" type="text" name="" id="">
+     </div>
+     <div class="registerMenu__inpRow">
+        <input placeholder="Новий пароль" class="deafaultInfo" type="password" name="" id="userPassword">
+     </div>
+     <div class="registerMenu__birth regText">
+        Дата нарождения
+     </div>
+     <div class="registerMenu__inpRow rowSelect">
+        <select id="">
+            <option value="1" selected="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+
+        <select id="">
+            <option value="1">Січень</option>
+            <option value="2">Лютий</option>
+            <option value="3">Березень</option>
+            <option value="4">Квітень</option>
+            <option value="5">Травень</option>
+            <option value="6">Червень</option>
+            <option value="7">Липень</option>
+            <option value="8">Серпень</option>
+            <option value="9">Вересень</option>
+            <option value="10">Жовтень</option>
+            <option value="9">Листопад</option>
+            <option value="10">Грудень</option>
+        </select>
+
+        <select id="">
+            <option value="2022" selected="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+        </select>
+    </div>
+     <div class="registerMenu__gender regText">
+        Стать
+     </div>
+     <div class="registerMenu__inpRow">
+
+           <div class="gendeBlock" id="huitaFirst">
+
+            <div class="gendeBlock__text">Жіноча</div>
+
+            <div class="gendeBlock__item" id="itemFirst">
+                
+            </div>
+
+           </div>
+
+
+
+           <div class="gendeBlock" id="huitaSecond">
+
+            <div class="gendeBlock__text">Чоловіча</div>
+
+            <div class="gendeBlock__itemSecond" id="itemSecond">
+            </div>
+
+           </div>
+
+    </div>
+
+    <button class="registerMenu__btn" id="mainRegister">Реєстрація</button>
+
+    <div class="registerMenu__logIn" id="inLog">Ввійти</div>
+
+
+ </div>
+</div>
+
+
+<!-- Burger__block -->
+
+<div class="Burger__block" id="burgerBlock">
+    <div class="Burger__block__inner">
+        <ul class="ulBurger">
+            <li class="liBurger">Головна</li>
+            <li class="liBurger">Каталог</li>
+            <li class="liBurger">Програми</li>
+            <li class="liBurger" id="burgerLog">Вхід</li>
+            <li class="liBurger" id="burgerReg">Регістрація</li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- Main Energy -->
+<div class="wrap" id="wrap">
+
+<div class="Main__energy" id="mainEnergy">
     <div class="container">
        <div class="Main__energy__inner">
         <div class="Main__energy__navBlock__img"></div>
             <div class="Main__energy__header wow animate__animated animate__bounceIn">
                 <div class="Logo">
-                    <div class="Main__energy__functionBlock__logo"></div>
+                    <div class="Main__energy__functionBlock__logo" id="logo"></div>
                     <div class="Logo__text">Cat <span class="energy">Energy</span></div>
                 </div>
 
-                 <ul>
-                  <a class="nav__link" href="#"><li class="li liMain">главная</li></a>
-                  <a class="nav__link" href="#"><li class="li ">Каталог продукции</li></a>
-                  <a class="nav__link" href="#"><li class="li ">подбор программы</li></a>
+                 <ul class="ulHeader" id="ulBlocks">
+                  <a class="nav__link"><li onclick="SmoothFirst()" class="li liMain">головна</li></a>
+                  <a class="nav__link"><li onclick="SmoothSecond()" class="li ">Каталог продукції</li></a>
+                  <a class="nav__link"><li  onclick="SmoothThird()" class="li ">підбір програми</li></a>
                  </ul>  
 
 
 
-                 <button class="burger" type="button">
+                 <button class="burger" id="burger" type="button">
                     <span class="burger__item"></span>
                 </button>
 
@@ -48,12 +213,12 @@
 
 
          <div class="Main__energy__functionBlock__box">
-             <div class="Main__energy__functionBlock__box__title">Функциональное <br> питание для котов</div>
+             <div class="Main__energy__functionBlock__box__title">Функціональне <br> харчування для <br> котів</div>
                 
              <div class="Main__energy__functionBlock__box__text">
-                Занялся собой? Займись котом!
+                Зайнявся собою? Займися котом!
              </div>
-             <button class="Main__energy__functionBlock__btn">подобрать программу</button>
+             <button class="Main__energy__functionBlock__btn" id="regBtn">підібрати програму</button>
          </div>
 
      
@@ -76,13 +241,13 @@
 
                     <div class="infoEnergy__box__row__imgCat"></div>
 
-                    <div class="infoEnergy__box__row__text">похудение</div>
+                    <div class="infoEnergy__box__row__text">схуднення</div>
 
                 </div>
 
-                <div class="infoEnergy__box__text">Ваш кот весит больше собаки и почти утратил способность 
-                    лазить по деревьям? Пора на диету! Cat Energy Slim поможет 
-                    вашему питомцу сбросить лишний вес.
+                <div class="infoEnergy__box__text">Ваш кіт важить більше собаки і майже втратив здатність
+                    лазити по деревах? Час на дієту! Cat Energy Slim допоможе
+                    вашому вихованцю скинути зайву вагу.
                 </div>
 
               <a href="">  <div class="infoEnergy__box__catalog">
@@ -100,13 +265,13 @@
 
                     <div class="infoEnergy__box__row__imgPuma"></div>
 
-                    <div class="infoEnergy__box__row__text">набор массы</div>
+                    <div class="infoEnergy__box__row__text">набір маси</div>
 
                 </div>
 
-                <div class="infoEnergy__box__text">Заработать авторитет среди дворовых котов и даже собак?
-                    Серия Cat Energy Pro поможет вашему коту нарастить 
-                    необходимые мышцы!
+                <div class="infoEnergy__box__text">Заробити авторитет серед дворових котів та навіть собак?
+                    Серія Cat Energy Pro допоможе вашому коту наростити
+                    необхідні м'язи!
                 </div>
 
               <a href="">  <div class="infoEnergy__box__catalog">
@@ -130,16 +295,16 @@
 
    <div class="container">
        <div class="aboutEnergy">
-           <div class="aboutEnergy__title">Как это работает</div>
+           <div class="aboutEnergy__title">Як це працює</div>
            <div class="aboutEnergy__row wow animate__animated animate__bounceInRight">
 
                <div class="aboutEnergy__row__item">
                    <div class="aboutEnergy__row__item__img">
                        <img src="css/Img/aboutEnergy/icon_leaf.svg" alt="">
                    </div>
-                   <div class="aboutEnergy__row__item__text">Функциональное питание
-                    содержит только полезные
-                    питательные вещества.</div>
+                   <div class="aboutEnergy__row__item__text">Функціональне харчування
+                    містить тільки корисні
+                    поживні речовини.</div>
                 </div>
 
 
@@ -147,9 +312,9 @@
                     <div class="aboutEnergy__row__item__img">
                         <img src="css/Img/aboutEnergy/icon_unknown.svg" alt="">
                     </div>
-                    <div class="aboutEnergy__row__item__text">Выпускается в виде порошка, 
-                        который нужно лишь залить 
-                        кипятком и готово.</div>
+                    <div class="aboutEnergy__row__item__text">Випускається у вигляді порошку,
+                        який потрібно лише залити
+                        окропом і готове.</div>
                  </div>
 
 
@@ -157,9 +322,9 @@
                     <div class="aboutEnergy__row__item__img">
                         <img src="css/Img/aboutEnergy/icon_eat.svg" alt="">
                     </div>
-                    <div class="aboutEnergy__row__item__text">Замените один-два приема 
-                        обычной еды на наше 
-                        функциональное питание.</div>
+                    <div class="aboutEnergy__row__item__text">Замініть один-два прийоми
+                        звичайної їжі на наше
+                        функціональне харчування.</div>
                  </div>
 
 
@@ -169,9 +334,9 @@
                     <div class="aboutEnergy__row__item__img">
                         <img src="css/Img/aboutEnergy/icon_alarm.svg" alt="">
                     </div>
-                    <div class="aboutEnergy__row__item__text">Уже через месяц наслаждайтесь 
-                        изменениями к лучшему 
-                        вашего питомца!</div>
+                    <div class="aboutEnergy__row__item__text">Вже за місяць насолоджуйтесь
+                        змінами на краще
+                        вашого вихованця!</div>
                  </div>
 
 
@@ -188,30 +353,30 @@
             <div class="container">
                 <div class="exempleEnergy__inner">
              <div class="exempleEnergy__info">
-                <div class="exempleEnergy__title wow animate__animated animate__flipInX">Живой пример</div>
+                <div class="exempleEnergy__title wow animate__animated animate__flipInX">Живий приклад</div>
                 <div class="exempleEnergy__info__block">
-                    <div class="exempleEnergy__info__block__text wow animate__animated animate__flipInX">Борис сбросил 5 кг за 2 месяца, просто заменив свой 
-                        обычный корм на Cat Energy Slim. Отличный результат 
-                        без изнуряющих тренировок! При этом он не менял своих 
-                        привычек и по-прежнему спит по 16 часов в день. 
+                    <div class="exempleEnergy__info__block__text wow animate__animated animate__flipInX">Борис скинув 5 кг за 2 місяці, просто замінивши свій
+                        Звичайний корм на Cat Energy Slim. Відмінний результат
+                        без виснажливих тренувань! При цьому він не міняв своїх
+                        звичок і, як і раніше, спить по 16 годин на день.
                     </div>
                     <div class="adaptions">
                     <div class="exempleEnergy__info__block__info">
 
                        <div class="firstBtn first">
                         <div class="weightInfo">5 КГ</div>
-                        <div class="weightInfo__text">снижение веса</div>
+                        <div class="weightInfo__text">зниження ваги</div>
                       </div>
 
                       <div class="firstBtn">
-                        <div class="weightInfo">60 ДНЕЙ</div>
-                        <div class="weightInfo__textSecond">затрачено времени</div>
+                        <div class="weightInfo">60 ДНІВ</div>
+                        <div class="weightInfo__textSecond">витрачено часу</div>
                       </div>
 
                     </div>
 
                    <div class="exempleEnergy__info__block__row">
-                       <div class="exempleEnergy__info__block__row__text">Затраты на питание:</div>
+                       <div class="exempleEnergy__info__block__row__text">Витрати харчування:</div>
                        <div class="exempleEnergy__info__block__row__price">15 000 ГРН.</div>
                    </div>
 
@@ -221,9 +386,11 @@
 
 
              <div class="exempleEnergy__catBlock">
-                 <div class="exempleEnergy__catBlock__img" id="catImg"></div>
+                 <div class="catImgBlock">
+                  <div class="exempleEnergy__catBlock__img" id="catImg"></div>
+                </div>
                  <div class="exempleEnergy__catBlock__switcher">
-                     <div class="switcher__previous" id="previous" >было</div>
+                     <div class="switcher__previous" id="previous">було</div>
                      <div class="switcher_loader">
                          <div class="switcher_loader__controler" id="loader">
                              <div class="mini__controler"></div>
@@ -255,7 +422,7 @@
 
  <div class="energyFooter">
    <div class="container">
-       <div class="energyFooter__inner">
+       <div class="energyFooter__inner wow animate__animated animate__bounceIn">
     <div class="footerLogo">Cat <span class="energy">Energy</span></div>
 
      <div class="energyFooter__social">
@@ -289,7 +456,7 @@
  </div>
 </div>
 </div>
-
+</div>
 <!-- /Energy Footer -->
 
 
